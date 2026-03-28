@@ -1,0 +1,201 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:white;
+}
+
+/* BARRA SUPERIOR */
+header{
+background:#950000;
+color:white;
+padding:15px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+/* logo + nombre */
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+height:55px;
+}
+
+/* menú */
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+cursor:pointer;
+padding-bottom:4px;
+}
+
+nav a.activo{
+border-bottom:2px solid white;
+}
+
+/* contenido */
+.contenido{
+padding:30px;
+}
+
+/* CENTRADO GENERAL */
+h1,h2{
+font-family:"Times New Roman", Times, serif;
+text-align:center;
+}
+
+p{
+text-align:justify;
+max-width:800px;
+margin:10px auto;
+line-height:1.6;
+}
+
+/* INTRO */
+.intro{
+display:flex;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+.intro img{
+width:520px;
+margin:0;
+}
+
+.texto-intro{
+margin-left:30px;
+max-width:500px;
+}
+
+.autoras{
+font-family:"Times New Roman", Times, serif;
+margin-top:20px;
+}
+
+/* espacio imagen secciones */
+.imagen-seccion{
+width:300px;
+height:200px;
+background:#ddd;
+margin:20px 0;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* secciones */
+.pagina{
+display:none;
+}
+
+.activa{
+display:block;
+}
+
+/* REFERENCIAS */
+footer{
+border-top:1px solid #ccc;
+margin-top:40px;
+padding:20px;
+}
+
+footer h2{
+font-family:"Times New Roman", Times, serif;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+
+.intro{
+flex-direction:column;
+}
+
+.texto-intro{
+margin-left:0;
+margin-top:20px;
+}
+
+.intro img{
+width:100%;
+}
+
+}
+
+/* MEJORA GENERAL DE IMÁGENES */
+img{
+max-width:100%;
+height:auto;
+}
+
+/* MEJORAS RESPONSIVE */
+@media (max-width:768px){
+
+body{
+font-size:15px;
+}
+
+.contenido{
+padding:20px;
+}
+
+/* textos */
+p{
+padding:0 10px;
+}
+
+/* títulos */
+h1{
+font-size:24px;
+}
+
+h2{
+font-size:20px;
+}
+
+/* imágenes grandes */
+.intro img{
+width:100%;
+}
+
+/* secciones con imagen + texto */
+div[style*="display:flex"]{
+flex-direction:column;
+text-align:center;
+}
+
+/* imágenes dentro de secciones */
+div[style*="display:flex"] img{
+width:90% !important;
+margin:10px auto;
+}
+
+/* menú */
+nav{
+text-align:center;
+width:100%;
+margin-top:10px;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+div[style*="display:flex"]{
+transition:all 0.3s ease;
+}
+
+div[style*="display:flex"]:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+}
